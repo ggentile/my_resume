@@ -1,14 +1,15 @@
 body {
         background-color: #696969;
-    }
+}
     
+
 .rocket{
         animation-name: rocket-animation;
         animation-duration: 2.5s;
         animation-iteration-count: infinite;
         transform-origin: 70% 70%;
         display:inline-block;
-    }
+}
     
 @keyframes rocket-animation {
         0% { transform: rotate( 0.0deg) }
@@ -19,21 +20,41 @@ body {
         50% { transform: rotate(10.0deg) }
         60% { transform: rotate( 0.0deg) } 
         100% { transform: rotate( 0.0deg) }
-    }
+}
     
 .introduction {
         color: #A9A9A9;
         text-align: center;
         letter-spacing: 2px;
         font-family: helvetica;
-    }
+        margin-left: 100px;
+        margin-top: 25%;
+        margin-right: 100px;
+}
     
 a:link {
         color: #A9A9A9;
         text-decoration: none;
-    }
+}
 a:hover {
         text-decoration: underline 0.15em rgba(220,220,220);
         transition: --offset 600ms, text-decoration-color 600ms;
-    }
-    
+}
+.halfway, .bottom{
+    color: #A9A9A9;
+    text-align: center;
+    letter-spacing: 2px;
+    font-family: helvetica;
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;   
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    padding: 5px 0;
+}
