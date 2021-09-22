@@ -13,16 +13,25 @@ camera.position.setZ(30);
 
 renderer.render(scene, camera);
 
-// checar como fazer um G geométrico e também como fazer o navbar funcionar de forma correta. 
-const geometry = 
-const material = new THREE.MeshBasicMaterial( {color: 0xff0000});
-const cube = new THREE.Mesh(geometry,material);
-scene.add(cube);
+// checar como fazer o navbar funcionar de forma correta. 
+let radius = 100;
+let segment = 64;
+const geometry = new THREE.CircleGeometry(radius, segment);
+const material = new THREE.LineBasicMaterial( {color: 0xff0000});
+
+geometry.vertices.shift();
+
+const elipse = new THREE.Line(geometry, material);
+scene.add(elipse);
 
 
 
 function animate () {
     requestAnimationFrame(animate);
+    elipse.rotation.x += 0.01;
+    elipse.rotation.y += 0.005
+    elipse.rotation.z +=0.01
+
     renderer.render(scene, camera);
 }
 

@@ -1,7 +1,10 @@
 body {
-        background-color: #696969;
-}
+        background-color: #696969 !important;
+  }
     
+.selector-for-some-widget {
+        box-sizing: content-box;
+}
 
 .rocket{
         animation-name: rocket-animation;
@@ -21,30 +24,21 @@ body {
         60% { transform: rotate( 0.0deg) } 
         100% { transform: rotate( 0.0deg) }
 }
-
-canvas{
-        position: fixed;
-        top:0;
-        left: 0;
-}
-    
 .introduction {
         color: #A9A9A9;
-        text-align: center;
-        letter-spacing: 2px;
+        letter-spacing: 1.5px;
         font-family: helvetica;
-        margin-left: 100px;
-        margin-top: 25%;
+        margin-left: 70px;
+        margin-top: 25px;
         margin-right: 100px;
-}
-    
+}    
 a:link {
-        color: #A9A9A9;
-        text-decoration: none;
+        color: #A9A9A9 !important;
+        text-decoration: none !important;
 }
 a:hover {
-        text-decoration: underline 0.15em rgba(220,220,220);
-        transition: --offset 600ms, text-decoration-color 600ms;
+        text-decoration: underline 0.15em rgba(220,220,220) !important;
+        transition: --offset 600ms, text-decoration-color 600ms !important;
 }
 .halfway, .bottom {
     color: #A9A9A9;
@@ -66,13 +60,5 @@ li {
 }
 a {
         color: #A9A9A9;
-        text-decoration: none;
-}
-.navbar-toggler .icon-bar {
-        margin: 5px;
-        display: flex;
-        width: 20px;
-        height: 1px;
-        background-color: #696969;
-        border-radius: 1px;
+        text-decoration: none !important;
 }
