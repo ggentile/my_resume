@@ -21,6 +21,12 @@ body {
         60% { transform: rotate( 0.0deg) } 
         100% { transform: rotate( 0.0deg) }
 }
+
+canvas{
+        position: fixed;
+        top:0;
+        left: 0;
+}
     
 .introduction {
         color: #A9A9A9;
@@ -40,7 +46,7 @@ a:hover {
         text-decoration: underline 0.15em rgba(220,220,220);
         transition: --offset 600ms, text-decoration-color 600ms;
 }
-.halfway, .bottom{
+.halfway, .bottom {
     color: #A9A9A9;
     text-align: center;
     letter-spacing: 2px;
@@ -57,4 +63,16 @@ ul {
 
 li {
     padding: 5px 0;
+}
+a {
+        color: #A9A9A9;
+        text-decoration: none;
+}
+.navbar-toggler .icon-bar {
+        margin: 5px;
+        display: flex;
+        width: 20px;
+        height: 1px;
+        background-color: #696969;
+        border-radius: 1px;
 }
